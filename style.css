@@ -148,7 +148,6 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Adjust if your face is too high/low in the circle */
     object-position: 50% 25%;
     display: block;
 }
