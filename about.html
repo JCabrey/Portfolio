@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- AOS (optional, if you still want animations here) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Jacob Cabrey | About</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+        Jacob <span>Cabrey</span>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          <a href="about.html">About</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <a href="skills.html">Skills</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ABOUT CONTENT -->
+  <section>
+    <div class="section-container" data-aos="fade-up" data-aos-duration="1500">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Jacob Cabrey—a passionate and detail-oriented Computer Science
+        student at the University of South Carolina with a strong work ethic
+        and a relentless drive to master Cybersecurity, IT, and Software Development.
+      </p>
+      <p>
+        I grew up in Atlanta, GA, where I developed a love for technology,
+        problem-solving, and continuous learning. Whether it’s optimizing
+        software, fortifying security systems, or developing innovative
+        applications, I take a precise and methodical approach to everything I
+        do. My ability to analyze, adapt, and think strategically allows me to
+        excel in fast-paced environments.
+      </p>
+      <p>
+        Beyond my technical pursuits, I have a deep passion for reading strategic
+        books and expanding my knowledge in coding and cybersecurity.
+        Some of my favorites include:
+      </p>
+      <ul>
+        <li>📖 The Prince by Niccolo Machiavelli</li>
+        <li>📖 The Eight</li>
+        <li>📖 Cybersecurity Blue Team Toolkit by Nadean H. Tanner</li>
+        <li>📖 Hacking: The Art of Exploitation by Jon Erickson</li>
+      </ul>
+      <p>
+        Outside of academics and work, I enjoy playing video games, disc golf,
+        and traditional golf. I’m an active brother of Phi Sigma Kappa, and I
+        love collecting art and vintage signs. My adventurous spirit has also
+        taken me across the world—I've traveled to Ireland, Portugal, Italy,
+        Germany, the Netherlands, and Canada, experiencing different cultures
+        and perspectives.
+      </p>
+      <p>
+        My goal is to continuously grow as a developer, cybersecurity specialist,
+        and problem-solver, leveraging my skills to create impactful solutions
+        in the tech world.
+      </p>
+
+      <!-- The circular photo (disc golf) -->
+      <div class="image" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+        <img src="images/disc.jpeg" alt="Disc golf photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Script (optional) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+  </script>
+  <!-- Same script.js if you want the hamburger to work -->
+  <script src="script.js"></script>
+</body>
+</html>

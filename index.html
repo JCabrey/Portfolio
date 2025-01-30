@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <!-- AOS Animation Library (if you still use animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <title>Jacob Cabrey | Home</title>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+        Jacob <span>Cabrey</span>
+      </div>
+      <!-- Notice these links point to separate HTML pages now -->
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          <a href="about.html">About</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <a href="skills.html">Skills</a>
+        </div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (HOME) -->
+  <section>
+    <div class="main-container">
+      <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+        <img src="images/myImage.png" alt="Profile Image" />
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+          Hey, I'm <span>Jacob Cabrey</span>
+        </h1>
+        <!-- Typewriter effect text -->
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+          I'm a <span class="typewriter-text"></span><label>|</label>
+        </div>
+        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+          I am a Computer Science student at the University of South Carolina with a strong passion for Cybersecurity, IT solutions, and software development. From an early age, I have been fascinated by technology, constantly exploring ways to optimize systems, enhance security, and build innovative solutions. I specialize in network security, software engineering, and UI/UX design, with a keen interest in ethical hacking, penetration testing, and cloud computing.
+          Beyond my technical expertise, I take a methodical and detail-oriented approach to problem-solving, ensuring efficiency and precision in every project I undertake. Whether it's developing secure applications, troubleshooting IT systems, or creating intuitive designs, I strive to deliver high-quality solutions that make a real impact. I am always eager to learn, adapt, and collaborate with like-minded individuals who share my passion for technology and innovation.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://github.com/JCabrey"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="1300"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jacob-cabrey-bbb5511ab/"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="1400"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="btn-container">
+          <!-- Make sure Resume.pdf is in the correct folder -->
+          <a
+            href="Resume.pdf"
+            download="Jacob_Cabrey_Resume.pdf"
+            class="btn"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="1800"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Script (if you're using AOS animations) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+  </script>
+  <!-- Your custom script (hamburger + typewriter) -->
+  <script src="script.js"></script>
+</body>
+</html>
